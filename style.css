@@ -61,11 +61,16 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    /* Added for animation like zoom in */
+    transition-duration: 0.5s;
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    /* Added for animation like zooming in. */
+    transform: scale(1.2) translate(10px);
+    z-index: 1;
 }
 
 #button-container {
@@ -78,6 +83,13 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+/* Added butoon style for hover */
+button:hover {
+    cursor: pointer;
+    color:  blue;
+    font-weight: bolder;
 }
 
 name {
